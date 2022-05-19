@@ -52,11 +52,6 @@ public class DataGenerator {
             return userInfo;
         }
 
-        public static UserInfo generateBlockedUser() {
-            UserInfo userInfo = new UserInfo(generateLogin(), generatePassword(), "blocked");
-            sendRequest(userInfo);
-            return userInfo;
-        }
 
         public static UserInfo generateInvalidPasswordUser(String status) {
             String login = generateLogin();
